@@ -24,9 +24,9 @@ default: &default
 development:
   <<: *default
   #for running local rails localhost 3000 server
-  # database: wordy-backend_development
+  database: wordy-backend_development
   #for running heroku server
-  database: my_dev_database
+  # database: my_dev_database
 
 
   # The specified database role being used to connect to postgres.
@@ -62,9 +62,9 @@ development:
 test:
   <<: *default
   #for running local rails localhost 3000 server
-  # database: wordy-backend_test
+  database: wordy-backend_test
   #for running heroku server
-  database: my_test_database
+  # database: my_test_database
 
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -89,8 +89,8 @@ test:
 production:
   <<: *default
   #for running local rails localhost 3000 server
-  # database: wordy-backend_production
-  # username: wordy-backend
-  # password: <%= ENV['WORDY-BACKEND_DATABASE_PASSWORD'] %>
+  database: wordy-backend_production
+  username: wordy-backend
+  password: <%= ENV['WORDY-BACKEND_DATABASE_PASSWORD'] %>
   #for running heroku server
-  database: my_production_database
+  # database: my_production_database
