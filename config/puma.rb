@@ -9,10 +9,7 @@ threads threads_count, threads_count
 
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 #
-#for rails localhost 3000 server
 port        ENV.fetch("PORT") { 3000 }
-#for heroku server
-environment ENV.fetch("RAILS_ENV") { "development" }
 
 # Specifies the `environment` that Puma will run in.
 #
